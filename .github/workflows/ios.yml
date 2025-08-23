@@ -16,6 +16,10 @@ jobs:
         uses: krdlab/setup-haxe@v1
         with:
           haxe-version: 4.3.0
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@master
+        with:
+          xcode-version: '16.4'
       - name: Restore existing build cache for faster compilation
         uses: actions/cache@v4
         with:
