@@ -8,14 +8,14 @@ jobs:
   build:
     name: iOS Build
     permissions: write-all
-    runs-on: macos-13
+    runs-on: macos-15
     steps:
       - name: Pulling the new commit
         uses: actions/checkout@v4
       - name: Setting up Haxe
         uses: krdlab/setup-haxe@v1
         with:
-          haxe-version: 4.3.0
+          haxe-version: 4.3.5
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@master
         with:
