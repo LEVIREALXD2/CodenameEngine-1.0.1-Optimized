@@ -36,6 +36,8 @@ jobs:
           haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_LATEST_HOME
           haxelib run lime config JAVA_HOME $JAVA_HOME_21_X64
           haxelib run lime config ANDROID_SETUP true
+          sed -i '/<section if="android">/,/<\/section>/c\
+          \t<config:android>\n\t\t<application android:appCategory="game" />\n\t</config:android>' $(haxelib libpath flixel)/include.xml
       - name: Building the game
         run: haxelib run lime build android -final
       - name: Uploading artifact (entire build)
