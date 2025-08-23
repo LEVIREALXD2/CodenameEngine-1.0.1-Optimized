@@ -14,42 +14,13 @@ import openfl.utils.Assets;
  * @author: Karim Akra and Homura Akemi (HomuHomu833)
  */
 @:access(mobile.objects.TouchButton)
+@:build(mobile.funkin.backend.system.macros.TouchPadMacro.build())
 class TouchPad extends MobileInputManager
 {
-	public var buttonLeft:TouchButton = new TouchButton(0, 0, [MobileInputID.LEFT]);
-	public var buttonUp:TouchButton = new TouchButton(0, 0, [MobileInputID.UP]);
-	public var buttonRight:TouchButton = new TouchButton(0, 0, [MobileInputID.RIGHT]);
-	public var buttonDown:TouchButton = new TouchButton(0, 0, [MobileInputID.DOWN]);
 	public var buttonLeft2:TouchButton = new TouchButton(0, 0, [MobileInputID.LEFT2]);
 	public var buttonUp2:TouchButton = new TouchButton(0, 0, [MobileInputID.UP2]);
 	public var buttonRight2:TouchButton = new TouchButton(0, 0, [MobileInputID.RIGHT2]);
 	public var buttonDown2:TouchButton = new TouchButton(0, 0, [MobileInputID.DOWN2]);
-	public var buttonA:TouchButton = new TouchButton(0, 0, [MobileInputID.A]);
-	public var buttonB:TouchButton = new TouchButton(0, 0, [MobileInputID.B]);
-	public var buttonC:TouchButton = new TouchButton(0, 0, [MobileInputID.C]);
-	public var buttonD:TouchButton = new TouchButton(0, 0, [MobileInputID.D]);
-	public var buttonE:TouchButton = new TouchButton(0, 0, [MobileInputID.E]);
-	public var buttonF:TouchButton = new TouchButton(0, 0, [MobileInputID.F]);
-	public var buttonG:TouchButton = new TouchButton(0, 0, [MobileInputID.G]);
-	public var buttonH:TouchButton = new TouchButton(0, 0, [MobileInputID.H]);
-	public var buttonI:TouchButton = new TouchButton(0, 0, [MobileInputID.I]);
-	public var buttonJ:TouchButton = new TouchButton(0, 0, [MobileInputID.J]);
-	public var buttonK:TouchButton = new TouchButton(0, 0, [MobileInputID.K]);
-	public var buttonL:TouchButton = new TouchButton(0, 0, [MobileInputID.L]);
-	public var buttonM:TouchButton = new TouchButton(0, 0, [MobileInputID.M]);
-	public var buttonN:TouchButton = new TouchButton(0, 0, [MobileInputID.N]);
-	public var buttonO:TouchButton = new TouchButton(0, 0, [MobileInputID.O]);
-	public var buttonP:TouchButton = new TouchButton(0, 0, [MobileInputID.P]);
-	public var buttonQ:TouchButton = new TouchButton(0, 0, [MobileInputID.Q]);
-	public var buttonR:TouchButton = new TouchButton(0, 0, [MobileInputID.R]);
-	public var buttonS:TouchButton = new TouchButton(0, 0, [MobileInputID.S]);
-	public var buttonT:TouchButton = new TouchButton(0, 0, [MobileInputID.T]);
-	public var buttonU:TouchButton = new TouchButton(0, 0, [MobileInputID.U]);
-	public var buttonV:TouchButton = new TouchButton(0, 0, [MobileInputID.V]);
-	public var buttonW:TouchButton = new TouchButton(0, 0, [MobileInputID.W]);
-	public var buttonX:TouchButton = new TouchButton(0, 0, [MobileInputID.X]);
-	public var buttonY:TouchButton = new TouchButton(0, 0, [MobileInputID.Y]);
-	public var buttonZ:TouchButton = new TouchButton(0, 0, [MobileInputID.Z]);
 
 	public var instance:MobileInputManager;
 	public var curDPadMode(default, null):String = "NONE";
