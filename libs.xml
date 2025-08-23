@@ -28,6 +28,6 @@
 
 		<lib name="format" />
 
-		<git name="hxcpp" url="https://github.com/th2l-devs/hxcpp" />
+		<git name="hxcpp" url="https://github.com/HomuHomu833/hxcpp" />
 	</if>
 </libraries>
