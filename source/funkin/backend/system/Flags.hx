@@ -62,7 +62,7 @@ class Flags {
 	 */
 	public static var SOUND_EXT:String = #if web "mp3" #else "ogg" #end; // we also support wav
 	public static var VIDEO_EXT:String = "mp4";
-	public static var IMAGE_EXT:String = "png"; // we also support jpg
+	public static var IMAGE_EXTS:Array<String> = ["png", "jpg", "jpeg", "astc", "dds"];
 
 	public static var DEFAULT_DISCORD_LOGO_KEY:String = "icon";
 	public static var DEFAULT_DISCORD_CLIENT_ID:String = "1383853614589673472";
