@@ -62,15 +62,8 @@ class UIImageExplorer extends UIFileExplorer {
 		if (image != null) {
 			var fullImagePath:String = '${Path.normalize(Sys.getCwd())}/${Paths.image(image)}'.replace('/', '\\');
 			var noExt = Path.withoutExtension(fullImagePath);
-			for (ext in Flags.IMAGE_EXTS)
-			{
-				final imagePath = '$noExt\\spritemap1.$ext';
-				if (FileSystem.exists(imagePath))
-				{
-					fullImagePath = imagePath;
-					break;
-				}
-			}
+			if (FileSystem.exists('$noExt\\spritemap1.png'))
+				fullImagePath = '$noExt\\spritemap1.png';
 	
 			if (FileSystem.exists(fullImagePath))
 				loadFile(fullImagePath);

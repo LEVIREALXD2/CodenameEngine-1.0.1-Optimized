@@ -14,15 +14,7 @@ class UIWarningSubstate extends MusicBeatSubstate {
 		var _ = new CustomShader(Options.intensiveBlur ? "engine/editorBlur" : "engine/editorBlurFast");
 		if(!Options.intensiveBlur) {
 			var noiseTexture:ShaderInput<openfl.display.BitmapData> = _.data.noiseTexture;
-			for (ext in Flags.IMAGE_EXTS)
-			{
-				var path = 'assets/shaders/noise256.' + ext;
-				if (Assets.exists(path))
-				{
-					noiseTexture.input = Assets.getBitmapData(path);
-					break;
-				}
-			}
+			noiseTexture.input = Assets.getBitmapData("assets/shaders/noise256.png");
 			noiseTexture.wrap = REPEAT;
 			var noiseTextureSize:ShaderParameter<Float> = _.data.noiseTextureSize;
 			noiseTextureSize.value = [noiseTexture.input.width, noiseTexture.input.height];

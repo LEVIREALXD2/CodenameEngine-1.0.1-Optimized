@@ -97,54 +97,19 @@ class TouchPad extends MobileInputManager
 		if (Options.oldPadTexture)
 		{
 			var frames:FlxGraphic = null;
-			final defaultPathBase:String = 'assets/mobile/images/virtualpad/${Graphic.toLowerCase()}';
+			final defaultPath:String = 'assets/mobile/images/virtualpad/${Graphic.toLowerCase()}.png';
 			#if MOD_SUPPORT
-			final moddyPathBase:String = '$moddyFolder/images/virtualpad/${Graphic.toLowerCase()}';
-			#end
-
-			var buttonLabelGraphicPath:String = null;
-
-			#if MOD_SUPPORT
-			for (ext in Flags.IMAGE_EXTS)
-			{
-				var modPath = '$moddyPathBase.$ext';
-				if (FileSystem.exists(modPath))
-				{
-					buttonLabelGraphicPath = modPath;
-					break;
-				}
-			}
-			#end
-
-			if (buttonLabelGraphicPath == null)
-			{
-				for (ext in Flags.IMAGE_EXTS)
-				{
-					var defaultPath = '$defaultPathBase.$ext';
-					if (FileSystem.exists(defaultPath))
-					{
-						buttonLabelGraphicPath = defaultPath;
-						break;
-					}
-				}
-			}
-
-			if (buttonLabelGraphicPath != null)
-			{
-				frames = FlxGraphic.fromBitmapData(BitmapData.fromBytes(File.getBytes(buttonLabelGraphicPath)));
-			}
+			final moddyPath:String = '$moddyFolder/images/virtualpad/${Graphic.toLowerCase()}.png';
+			if (FileSystem.exists(moddyPath))
+				buttonLabelGraphicPath = moddyPath;
 			else
-			{
-				for (ext in Flags.IMAGE_EXTS)
-				{
-					var defaultPath = '$defaultPathBase.$ext';
-					if (Assets.exists(defaultPath))
-					{
-						frames = FlxGraphic.fromBitmapData(Assets.getBitmapData(defaultPath));
-						break;
-					}
-				}
-			}
+			#end
+				buttonLabelGraphicPath = defaultPath;
+
+			if (FileSystem.exists(buttonLabelGraphicPath))
+				frames = FlxGraphic.fromBitmapData(BitmapData.fromBytes(File.getBytes(buttonLabelGraphicPath)));
+			else
+				frames = FlxGraphic.fromBitmapData(Assets.getBitmapData(buttonLabelGraphicPath));
 
 			button.antialiasing = Options.antialiasing;
 			button.frames = FlxTileFrames.fromGraphic(frames, FlxPoint.get(Std.int(frames.width / 2), frames.height));
@@ -155,46 +120,29 @@ class TouchPad extends MobileInputManager
 		else
 		{
 			var buttonGraphicPath:String = "";
-			var buttonLabelGraphicPath:String = "";
-			final defaultPathBase:String = 'assets/mobile';
+			final defaultPath:String = 'assets/mobile';
 			#if MOD_SUPPORT
-			final moddyPathBase:String = '$moddyFolder/mobile';
+			final moddyPath:String = '$moddyFolder/mobile';
 			#end
-
 			for (file in ["bg", Graphic.toUpperCase()])
 			{
-				var found = false;
-
+				var path:String = '';
 				#if MOD_SUPPORT
-				for (ext in Flags.IMAGE_EXTS)
-				{
-					var modPath = '$moddyPathBase/images/touchpad/${file}.$ext';
-					if (FileSystem.exists(modPath))
-					{
-						if (file == "bg")
-							buttonGraphicPath = modPath;
-						else
-							buttonLabelGraphicPath = modPath;
-						found = true;
-						break;
-					}
-				}
+				path = '$moddyPath/images/touchpad/${file}.png';
+				if (FileSystem.exists(path))
+					if (file == "bg")
+						buttonGraphicPath = path;
+					else
+						buttonLabelGraphicPath = path;
+				else
 				#end
-
-				if (!found)
 				{
-					for (ext in Flags.IMAGE_EXTS)
-					{
-						var defaultPath = '$defaultPathBase/images/touchpad/${file}.$ext';
-						if (Assets.exists(defaultPath))
-						{
-							if (file == "bg")
-								buttonGraphicPath = defaultPath;
-							else
-								buttonLabelGraphicPath = defaultPath;
-							break;
-						}
-					}
+					path = '$defaultPath/images/touchpad/${file}.png';
+					if (Assets.exists(path))
+						if (file == "bg")
+							buttonGraphicPath = path;
+						else
+							buttonLabelGraphicPath = path;
 				}
 			}
 

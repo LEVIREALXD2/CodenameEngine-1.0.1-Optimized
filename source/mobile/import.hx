@@ -11,7 +11,6 @@ import flixel.tweens.FlxTween;
 import flixel.sound.FlxSound;
 import funkin.backend.assets.ModsFolder;
 import funkin.backend.assets.Paths;
-import funkin.backend.system.Flags;
 import funkin.backend.utils.CoolUtil;
 import funkin.backend.utils.NativeAPI;
 import funkin.options.Options;

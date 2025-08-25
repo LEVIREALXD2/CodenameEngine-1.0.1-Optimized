@@ -107,30 +107,6 @@ class Assets
 			}
 		}
 
-		for (ext in ['astc', 'dds'])
-		{
-			final textureName:String = haxe.io.Path.withoutExtension(id) + '.$ext';
-
-			if (Assets.exists('$textureName'))
-			{
-				final texture = switch (ext)
-				{
-					case 'astc': openfl.Lib.current.stage.context3D.createASTCTexture(Assets.getBytes(textureName));
-					case 'dds': openfl.Lib.current.stage.context3D.createS3TCTexture(Assets.getBytes(textureName));
-					default: null;
-				}
-
-				final bitmapData:BitmapData = BitmapData.fromTexture(texture);
-
-				if (useCache && cache.enabled)
-				{
-					cache.setBitmapData(id, bitmapData);
-				}
-
-				return bitmapData;
-			}
-		}
-
 		var image = LimeAssets.getImage(id, false);
 
 		if (image != null)

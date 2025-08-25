@@ -9,8 +9,7 @@ import sys.FileSystem;
 
 class TouchPadMacro
 {
-	public static final GRAPHICS_IGNORE:Array<String> = ['bg'];
-	static final IMAGE_EXTS:Array<String> = ["png", "jpg", "jpeg", "astc", "dds"];
+	public static final GRAPHICS_IGNORE:Array<String> = ['bg.png'];
 
 	public static macro function build():Array<Field>
 	{
@@ -20,8 +19,7 @@ class TouchPadMacro
 
 		for (graphic in getGraphicsList())
 		{
-			if (GRAPHICS_IGNORE.contains(graphic))
-				continue;
+			if (GRAPHICS_IGNORE.contains(graphic)) continue;
 
 			var typePath:TypePath = {
 				name: 'TouchButton',
@@ -31,7 +29,7 @@ class TouchPadMacro
 			var args:Array<Expr> = [
 				Context.makeExpr(0, pos),
 				Context.makeExpr(0, pos),
-				Context.makeExpr([graphic], pos)
+				Context.makeExpr([graphic.split('.')[0]], pos)
 			];
 
 			var expr:Expr = {
@@ -53,33 +51,22 @@ class TouchPadMacro
 	private static function getGraphicsList():Array<String>
 	{
 		#if ios
-		final graphicsPath:String = "../../../../../assets/mobile/images/touchpad/";
+		final grapghicsPath:String = "../../../../../assets/mobile/images/touchpad/";
 		#else
-		final graphicsPath:String = "assets/mobile/images/touchpad/";
+		final grapghicsPath:String = "assets/mobile/images/touchpad/";
 		#end
 
-		if (!FileSystem.exists(graphicsPath))
-			Context.error("ERROR: Directory '" + graphicsPath + "' not found but it's required.", Context.currentPos());
+		if (!FileSystem.exists(grapghicsPath)) Context.error("ERROR: Directory '" + grapghicsPath + "' not found but it's required.", Context.currentPos());
 
-		var files:Array<String> = FileSystem.readDirectory(graphicsPath);
-		var graphics:Array<String> = [];
-
-		for (file in files)
-		{
-			var ext = file.split('.').pop();
-			if (IMAGE_EXTS.indexOf(ext) != -1)
-			{
-				graphics.push(file.split('.')[0]);
-			}
-		}
-
-		return graphics;
+		return FileSystem.readDirectory(grapghicsPath);
 	}
 
 	private static function formatGraphicToButtonName(name:String):String
 	{
+		if (StringTools.contains(name, '.')) name = name.split('.')[0];
 		name = name.toLowerCase();
-		name = name.charAt(0).toUpperCase() + name.substr(1);
+		name = name.charAt(0).toUpperCase() + name.substr(1, name.length);
+
 		return 'button$name';
 	}
 }
