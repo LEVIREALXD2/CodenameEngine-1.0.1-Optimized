@@ -131,7 +131,7 @@ class CrashHandler
 	#if sys
 	private static function saveErrorMessage(message:String):Void
 	{
-		final folder:String = #if android StorageUtil.getExternalStorageDirectory() + #end 'logs/';
+		final folder:String = Sys.getCwd() + 'logs/';
 		try
 		{
 			if (!FileSystem.exists(folder))
