@@ -123,7 +123,7 @@ class Paths
 		for (e in exts)
 		{
 			final image = getPath('images/$key.$e', library);
-			if (image != null && OpenFlAssets.exists(image))
+			if (image != null)
 				return image;
 		}
 		return null;
