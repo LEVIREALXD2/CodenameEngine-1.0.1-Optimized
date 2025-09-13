@@ -11,8 +11,8 @@
 		<str id="ok">Ok</str>
 
 		<group name="Warnings" prefix="warnings.">
-		<str id="mkRequirement-title">Advertencia: Teclado y Mouse son requeridos!</str>
-		<str id="mkRequirement-body">Estas a punto de entrar al Editor. Usarlos requerirá tener conectado un Mouse y Teclado.\n(Tal vez necesites ajustar la Opacidad del TouchPad a 0)\n\n\nProceder?</str>
+			<str id="mkRequirement-title">Advertencia: Teclado y Mouse son requeridos!</str>
+			<str id="mkRequirement-body">Estas a punto de entrar al Editor. Usarlos requerirá tener conectado un Mouse y Teclado.\n(Tal vez necesites ajustar la Opacidad del TouchPad a 0)\n\n\nProceder?</str>
 		</group>
 	</group>
 
