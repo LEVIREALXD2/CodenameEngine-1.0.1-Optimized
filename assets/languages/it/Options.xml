@@ -204,8 +204,8 @@
 	</group>
 
 	<group name="MobileOptions" prefix="MobileOptions.">
-		<str id="optionsTree.mobile-name">Impostazioni Telefono</str>
-		<str id="optionsTree.mobile-desc">Cambia Impostazioni riguardo al Telefono o ai Controlli Touch.</str>
+		<str id="optionsTree.mobile-name">Opzioni Telefono</str>
+		<str id="optionsTree.mobile-desc">Cambia impostazioni riguardo al Telefono o ai Controlli Touch.</str>
 
 		<str id="extraHints-name">Suggerimenti Extra</str>
 		<str id="extraHints-desc">Seleziona quanti suggerimenti extra preferisci avere su hitbox.</str>
