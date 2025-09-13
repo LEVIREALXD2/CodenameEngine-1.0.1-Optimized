@@ -15,6 +15,9 @@ class StorageUtil
 	public static function getExternalStorageDirectory():String
 		return '/storage/emulated/0/.CodenameEngine/';
 
+	public static function getModsPath():String
+		return Options.useExternal ? StorageUtil.getExternalStorageDirectory() : StorageUtil.getStorageDirectory();
+
 	public static function requestPermissions():Void
 	{
 		if (AndroidVersion.SDK_INT >= AndroidVersionCode.TIRAMISU)

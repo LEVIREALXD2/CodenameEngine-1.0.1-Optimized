@@ -177,8 +177,8 @@ class Main extends Sprite
 
 		ModsFolder.init();
 		#if MOD_SUPPORT
-		if (FileSystem.exists("mods/autoload.txt"))
-			modToLoad = File.getContent("mods/autoload.txt").trim();
+		if (FileSystem.exists(#if android StorageUtil.getExternalStorageDirectory() + #elseif (!android && mobile) StorageUtil.getStorageDirectory() + #end "mods/autoload.txt"))
+			modToLoad = File.getContent(#if android StorageUtil.getExternalStorageDirectory() + #elseif (!android && mobile) StorageUtil.getStorageDirectory() + #end "mods/autoload.txt").trim();
 
 		ModsFolder.switchMod(modToLoad.getDefault(Options.lastLoadedMod));
 		#end

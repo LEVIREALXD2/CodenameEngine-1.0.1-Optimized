@@ -112,6 +112,12 @@
 
 		<str id="screenTimeOut-name">Permitir Tiempo de Espera</str>
 		<str id="screenTimeOut-desc">Si se activa, el Movil entrara en el Modo Descanso si el Usuario esta Inactivo</str>
+
+		<str id="useExternal-name">Usar Carpeta EXTERNAL</str>
+		<str id="useExternal-desc">Al activarlo, el Engine usara el Directorio Externo para los Mods y Addons (.CodenameEngine)</str>
+
+		<str id="storageTypeChange-title">Advertencia: El Directorio ha sido cambiado!</str>
+		<str id="storageTypeChange-body">El Directorio del Engine ha sido cambiado.\nSe le requerirá reiniciar el Juego para que surga efectos.\nCualquier mod instalado previamente tendra que ser movido manualmente hacia el nuevo Directorio después del reinicio.\n\nPresiona OK para reiniciar el juego y aplicar los cambios.</str>
 	</group>
 
 	<group name="GameplayOptions" prefix="GameplayOptions.">

@@ -58,6 +58,9 @@ class Options
 	 */
 	#if mobile
 	public static var screenTimeOut:Bool = false;
+	#if android
+	public static var useExternal:Bool = false;
+	#end
 	#end
 	public static var extraHints:String = "NONE";
 	public static var hitboxPos:Bool = true;

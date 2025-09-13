@@ -121,6 +121,12 @@
 
 		<str id="screenTimeOut-name">Allow Screen Timeout</str>
 		<str id="screenTimeOut-desc">If checked, The phone will enter sleep mode if the player is inactive.</str>
+
+		<str id="useExternal-name">Use EXTERNAL Folder</str>
+		<str id="useExternal-desc">If checked, The engine will use .CodenameEngine for the Mods and Addons folder.</str>
+
+		<str id="storageTypeChange-title">Warning: Storage Type Has Been Changed!</str>
+		<str id="storageTypeChange-body">The Storage Type has been changed.\nA restart is required for this change to take effect.\nAny previously installed mods will have to be moved manually to the new Storage Types's directory after this restart.\n\nPress OK to reset the game and apply the changes.</str>
 	</group>
 
 	<group name="GameplayOptions" prefix="GameplayOptions.">
