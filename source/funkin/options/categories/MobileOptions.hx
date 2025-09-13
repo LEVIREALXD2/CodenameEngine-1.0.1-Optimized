@@ -5,8 +5,10 @@ import lime.system.System as LimeSystem;
 
 class MobileOptions extends TreeMenuScreen
 {
+	#if android
 	final lastExternal:Bool = Options.useExternal;
 	var externalOption:Checkbox;
+	#end
 
 	public function new()
 	{
@@ -55,6 +57,7 @@ class MobileOptions extends TreeMenuScreen
 	{
 		super.close();
 
+		#if android
 		if (lastExternal != externalOption.checked)
 		{
 			persistentUpdate = false;
@@ -62,5 +65,6 @@ class MobileOptions extends TreeMenuScreen
 			funkin.backend.utils.NativeAPI.showMessageBox(TU.translate('MobileOptions.storageTypeChange-title'), TU.translate('MobileOptions.storageTypeChange-body'));
 			Sys.exit(0);
 		}
+		#end
 	}
 }
