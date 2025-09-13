@@ -48,9 +48,9 @@ class Flags {
 
 	@:bypass public static var WINDOW_TITLE_USE_MOD_NAME:Bool = false;
 	@:lazy public static var TITLE:String = Application.current.meta.get('name');
-	@:lazy public static var VERSION:String = Application.current.meta.get('version');
+	public static var VERSION:String = Application.current.meta.get('version');
 
-	@:lazy public static var VERSION_MESSAGE:String = 'Codename Engine v$VERSION';
+	public static var VERSION_MESSAGE:String = 'Codename Engine v$VERSION';
 
 	public static var REPO_NAME:String = "CodenameEngine";
 	public static var REPO_OWNER:String = "CodenameCrew";
