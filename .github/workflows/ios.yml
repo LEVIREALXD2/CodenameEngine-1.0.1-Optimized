@@ -15,7 +15,7 @@ jobs:
       - name: Setting up Haxe
         uses: krdlab/setup-haxe@v2
         with:
-          haxe-version: 4.3.5
+          haxe-version: 4.3.7
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@master
         with:
