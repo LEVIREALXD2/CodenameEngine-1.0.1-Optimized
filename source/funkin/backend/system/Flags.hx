@@ -58,7 +58,7 @@ class Flags {
 
 	/**
 	 * Preferred sound extension for the game's audio files.
-	 * Currently is set to `mp3` for web targets, and `ogg` for other targ ets.
+	 * Currently is set to `mp3` for web targets, and `ogg` for other targets.
 	 */
 	public static var SOUND_EXT:String = #if web "mp3" #else "ogg" #end; // we also support wav
 	public static var VIDEO_EXT:String = "mp4";
@@ -77,7 +77,7 @@ class Flags {
 	public static var DEFAULT_DIFFICULTY:String = "normal";
 	public static var DEFAULT_STAGE:String = "stage";
 	public static var DEFAULT_SCROLL_SPEED:Float = 2.0;
-	public static var DEFAULT_HEALTH_ICON:String  = "face";
+	public static var DEFAULT_HEALTH_ICON:String = "face";
 
 	public static var SONGS_LIST_MOD_MODE:Allow<"prepend", "override", "append"> = "override";
 	public static var WEEKS_LIST_MOD_MODE:Allow<"prepend", "override", "append"> = "override";
