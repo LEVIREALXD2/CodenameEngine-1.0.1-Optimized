@@ -48,9 +48,9 @@ class Flags {
 
 	@:bypass public static var WINDOW_TITLE_USE_MOD_NAME:Bool = false;
 	@:lazy public static var TITLE:String = Application.current.meta.get('name');
-	public static var VERSION:String = Application.current.meta.get('version');
+	@:lazy public static var VERSION:String = Application.current.meta.get('version');
 
-	public static var VERSION_MESSAGE:String = 'Codename Engine v$VERSION';
+	@:lazy public static var VERSION_MESSAGE:String = 'Codename Engine v$VERSION';
 
 	public static var REPO_NAME:String = "CodenameEngine";
 	public static var REPO_OWNER:String = "CodenameCrew";
@@ -58,7 +58,7 @@ class Flags {
 
 	/**
 	 * Preferred sound extension for the game's audio files.
-	 * Currently is set to `mp3` for web targets, and `ogg` for other targets.
+	 * Currently is set to `mp3` for web targets, and `ogg` for other targ ets.
 	 */
 	public static var SOUND_EXT:String = #if web "mp3" #else "ogg" #end; // we also support wav
 	public static var VIDEO_EXT:String = "mp4";
@@ -77,7 +77,7 @@ class Flags {
 	public static var DEFAULT_DIFFICULTY:String = "normal";
 	public static var DEFAULT_STAGE:String = "stage";
 	public static var DEFAULT_SCROLL_SPEED:Float = 2.0;
-	public static var DEFAULT_HEALTH_ICON:String = "face";
+	public static var DEFAULT_HEALTH_ICON:String  = "face";
 
 	public static var SONGS_LIST_MOD_MODE:Allow<"prepend", "override", "append"> = "override";
 	public static var WEEKS_LIST_MOD_MODE:Allow<"prepend", "override", "append"> = "override";
