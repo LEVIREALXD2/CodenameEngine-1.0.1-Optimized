@@ -51,7 +51,7 @@ class ALSoftConfig
 		var fields = Context.getBuildFields();
 		var pos = Context.currentPos();
 
-		if (!FileSystem.exists('alsoft.txt'))
+		if (!FileSystem.exists('building/alsoft.txt'))
 			return fields;
 
 		var newFields = fields.copy();
@@ -62,7 +62,7 @@ class ALSoftConfig
 				newFields[i] = {
 					name: 'OPENAL_CONFIG',
 					access: [APrivate, AStatic, AFinal],
-					kind: FVar(macro :String, macro $v{File.getContent('alsoft.txt')}),
+					kind: FVar(macro :String, macro $v{File.getContent('building/alsoft.txt')}),
 					pos: pos,
 				};
 			}
