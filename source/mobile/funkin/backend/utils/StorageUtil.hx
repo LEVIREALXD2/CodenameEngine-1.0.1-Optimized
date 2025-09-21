@@ -16,8 +16,12 @@ class StorageUtil
 		return '/storage/emulated/0/.CodenameEngine/';
 
 	public static function getModsPath():String
-		return Options.useExternal ? StorageUtil.getExternalStorageDirectory() : StorageUtil.getStorageDirectory();
-
+	{
+		final externalFile:String = lime.system.System.applicationStorageDirectory  + 'external.txt';
+		final externalStatus:String = FileSystem.exists(externalFile) ? File.getContent(externalFile) : "false";
+		return externalStatus == "true" ? StorageUtil.getExternalStorageDirectory() : StorageUtil.getStorageDirectory();
+	}
+	
 	public static function requestPermissions():Void
 	{
 		if (AndroidVersion.SDK_INT >= AndroidVersionCode.TIRAMISU)

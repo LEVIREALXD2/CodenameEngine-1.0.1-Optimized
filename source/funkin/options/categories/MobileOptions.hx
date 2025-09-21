@@ -60,8 +60,9 @@ class MobileOptions extends TreeMenuScreen
 		#if android
 		if (lastExternal != externalOption.checked)
 		{
+			Options.save();
+			CoolUtil.safeSaveFile(lime.system.System.applicationStorageDirectory + "external.txt", Std.string(externalOption.checked));
 			persistentUpdate = false;
-
 			funkin.backend.utils.NativeAPI.showMessageBox(TU.translate('MobileOptions.storageTypeChange-title'), TU.translate('MobileOptions.storageTypeChange-body'));
 			Sys.exit(0);
 		}
