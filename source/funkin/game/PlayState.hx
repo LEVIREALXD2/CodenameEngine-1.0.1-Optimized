@@ -674,8 +674,8 @@ class PlayState extends MusicBeatState
 		detailsText = isStoryMode ? ("Story Mode: " + storyWeek.name) : "Freeplay";
 
 		// Checks if cutscene files exists
-		var cutscenePath = Paths.script('songs/${SONG.meta.name}/cutscene');
-		var endCutscenePath = Paths.script('songs/${SONG.meta.name}/cutscene-end');
+		var cutscenePath = Paths.file('songs/${SONG.meta.name}/cutscene.${Flags.VIDEO_EXT}');
+		var endCutscenePath = Paths.file('songs/${SONG.meta.name}/cutscene-end.${Flags.VIDEO_EXT}');
 		if (Assets.exists(cutscenePath)) cutscene = cutscenePath;
 		if (Assets.exists(endCutscenePath)) endCutscene = endCutscenePath;
 
