@@ -29,7 +29,8 @@ class SaveSubstate extends MusicBeatSubstate {
 		var fileDialog = new FileDialog();
 		fileDialog.onCancel.add(function() close());
 		#if mobile
-		fileDialog.save(data, null, Path.withoutExtension(options.defaultSaveFile), null, getMimeTypeForExtension(Path.extension(options.defaultSaveFile)));
+		fileDialog.onSave.add(function() close());
+		fileDialog.save(data, null, options.defaultSaveFile, null, "*/*");
 		#else
 		fileDialog.onSelect.add(function(str) {
 			CoolUtil.safeSaveFile(str, data);
@@ -43,19 +44,6 @@ class SaveSubstate extends MusicBeatSubstate {
 		super.update(elapsed);
 		parent.persistentUpdate = false;
 	}
-
-    #if mobile
-    private function getMimeTypeForExtension(extension:String):String
-    {
-        return switch (extension)
-        {
-            case "txt": "text/plain";
-            case "xml": "application/xml";
-            case "json": "application/json";
-            default: "*/*";
-        }
-    }
-    #end
 }
 
 typedef SaveSubstateData = {
