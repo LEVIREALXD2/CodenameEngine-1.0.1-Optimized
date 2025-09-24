@@ -535,6 +535,40 @@ class Charter extends UIState {
 		globalAddEventSpr.cameras = [charterCamera];
 		globalAddEventSpr.alpha = 0;
 
+	playButton = new UIButton(FlxG.width - 105, FlxG.height - 85, ">", () -> {
+		_playback_play();
+		playButton.field.text = FlxG.sound.music.playing ? "||" : ">";
+	}, 75, 75);
+	playButton.cameras = [uiCamera];
+	playButton.field.scale.set(1.5,1.5);
+		
+	testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", _chart_playtest, 120, 50);
+	testButton.cameras = [uiCamera];
+		
+	deleteButton = new UIButton(10, 150, "X", _edit_delete, 40, 40);
+	deleteButton.cameras = [uiCamera];
+	deleteButton.field.scale.set(1.5,1.5);
+		
+	undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", _edit_undo, 40, 40);
+	undoButton.cameras = [uiCamera];
+	undoButton.field.scale.set(1.5,1.5);
+		
+	redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", _edit_redo, 40, 40);
+	redoButton.cameras = [uiCamera];
+	redoButton.field.scale.set(1.5,1.5);
+		
+	sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
+	sustainTxt.cameras = [uiCamera];
+		
+	upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", _note_subtractsustain, 40, 40);
+	upSustainButton.cameras = [uiCamera];
+		
+	downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", _note_addsustain, 40, 40);
+	downSustainButton.cameras = [uiCamera];
+	
+	exitButton = new UIButton(10, FlxG.height - 50, "<", _file_exit, 40, 40);
+	exitButton.cameras = [uiCamera];
+
 		// adds grid and notes so that they're ALWAYS behind the UI
 		add(gridBackdrops);
 		add(leftEventsBackdrop);
@@ -562,6 +596,20 @@ class Charter extends UIState {
 		add(noteTypeText);
 		// add the ui group
 		add(uiGroup);
+
+		#if mobile
+		add(playButton);
+		add(testButton);
+		add(deleteButton);
+		add(undoButton);
+		add(redoButton);
+		add(sustainTxt);
+		add(upSustainButton);
+		add(downSustainButton);
+		add(exitButton);
+		addTouchPad("LEFT_FULL", "NONE");
+		addTouchPadCamera();
+		#end
 
 		loadSong();
 
@@ -1375,6 +1423,14 @@ class Charter extends UIState {
 						}
 					}
 				}
+				if (controls.LEFT_P)
+					_playback_back();
+				if (controls.RIGHT_P)
+					_playback_forward();
+				if (controls.UP_P)
+					_playback_back_step();
+				if (controls.DOWN_P)
+					_playback_forward_step();
 			}
 		}
 
