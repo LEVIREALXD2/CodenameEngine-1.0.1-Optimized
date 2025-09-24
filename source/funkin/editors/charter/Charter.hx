@@ -100,6 +100,17 @@ class Charter extends UIState {
 	public var uiCamera:FlxCamera;
 	public var selectionBox:UISliceSprite;
 	public var autoSaveNotif:CharterAutoSaveUI;
+	
+	public var playButton:UIButton;
+	public var testButton:UIButton;
+	public var deleteButton:UIButton;
+	public var undoButton:UIButton;
+	public var redoButton:UIButton;
+	public var sustainTxt:FlxText;
+	public var upSustainButton:UIButton;
+	public var downSustainButton:UIButton;
+	public var exitButton:UIButton;
+	
 	public static var autoSaveTimer:Float = 0;
 
 	public static var selection:Selection;
