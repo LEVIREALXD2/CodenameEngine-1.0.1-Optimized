@@ -24,6 +24,7 @@ import haxe.Json;
 import sys.FileSystem;
 #end
 import flixel.util.FlxColor;
+import flixel.text.FlxText;
 
 class Charter extends UIState {
 	public static var __song:String;
