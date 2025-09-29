@@ -24,7 +24,9 @@ import haxe.Json;
 import sys.FileSystem;
 #end
 import flixel.util.FlxColor;
+#if TOUCH_CONTROLS
 import flixel.text.FlxText;
+#end
 
 class Charter extends UIState {
 	public static var __song:String;
@@ -101,7 +103,8 @@ class Charter extends UIState {
 	public var uiCamera:FlxCamera;
 	public var selectionBox:UISliceSprite;
 	public var autoSaveNotif:CharterAutoSaveUI;
-	
+
+	#if TOUCH_CONTROLS
 	public var playButton:UIButton;
 	public var testButton:UIButton;
 	public var deleteButton:UIButton;
@@ -111,7 +114,8 @@ class Charter extends UIState {
 	public var upSustainButton:UIButton;
 	public var downSustainButton:UIButton;
 	public var exitButton:UIButton;
-	
+	#end
+
 	public static var autoSaveTimer:Float = 0;
 
 	public static var selection:Selection;
@@ -547,39 +551,42 @@ class Charter extends UIState {
 		globalAddEventSpr.cameras = [charterCamera];
 		globalAddEventSpr.alpha = 0;
 
-	playButton = new UIButton(FlxG.width - 105, FlxG.height - 85, ">", (_) -> {
-		_playback_play(_);
-		playButton.field.text = FlxG.sound.music.playing ? "||" : ">";
-	}, 75, 75);
-	playButton.cameras = [uiCamera];
-	playButton.field.scale.set(1.5,1.5);
-		
-	testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", (_) -> _chart_playtest(_), 120, 50);
-	testButton.cameras = [uiCamera];
-		
-	deleteButton = new UIButton(10, 150, "X", (_) -> _edit_delete(_), 40, 40);
-	deleteButton.cameras = [uiCamera];
-	deleteButton.field.scale.set(1.5,1.5);
-		
-	undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", (_) -> _edit_undo(_), 40, 40);
-	undoButton.cameras = [uiCamera];
-	undoButton.field.scale.set(1.5,1.5);
-		
-	redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", (_) -> _edit_redo(_), 40, 40);
-	redoButton.cameras = [uiCamera];
-	redoButton.field.scale.set(1.5,1.5);
-		
-	sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
-	sustainTxt.cameras = [uiCamera];
-		
-	upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", (_) -> _note_subtractsustain(_), 40, 40);
-	upSustainButton.cameras = [uiCamera];
-		
-	downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", (_) -> _note_addsustain(_), 40, 40);
-	downSustainButton.cameras = [uiCamera];
-	
-	exitButton = new UIButton(10, FlxG.height - 50, "<", (_) -> _file_exit(_), 40, 40);
-	exitButton.cameras = [uiCamera];
+		#if TOUCH_CONTROLS
+		playButton = new UIButton(FlxG.width - 105, FlxG.height - 85, ">", () ->
+		{
+			_playback_play(null);
+			playButton.field.text = FlxG.sound.music.playing ? "||" : ">";
+		}, 75, 75);
+		playButton.cameras = [uiCamera];
+		playButton.field.scale.set(1.5, 1.5);
+
+		testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", () -> _chart_playtest(null), 120, 50);
+		testButton.cameras = [uiCamera];
+
+		deleteButton = new UIButton(10, 150, "X", () -> _edit_delete(null), 40, 40);
+		deleteButton.cameras = [uiCamera];
+		deleteButton.field.scale.set(1.5, 1.5);
+
+		undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", () -> _edit_undo(null), 40, 40);
+		undoButton.cameras = [uiCamera];
+		undoButton.field.scale.set(1.5, 1.5);
+
+		redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", () -> _edit_redo(null), 40, 40);
+		redoButton.cameras = [uiCamera];
+		redoButton.field.scale.set(1.5, 1.5);
+
+		sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
+		sustainTxt.cameras = [uiCamera];
+
+		upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", () -> _note_subtractsustain(null), 40, 40);
+		upSustainButton.cameras = [uiCamera];
+
+		downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", () -> _note_addsustain(null), 40, 40);
+		downSustainButton.cameras = [uiCamera];
+
+		exitButton = new UIButton(10, FlxG.height - 50, "<", () -> _file_exit(null), 40, 40);
+		exitButton.cameras = [uiCamera];
+		#end
 
 		// adds grid and notes so that they're ALWAYS behind the UI
 		add(gridBackdrops);
@@ -609,7 +616,7 @@ class Charter extends UIState {
 		// add the ui group
 		add(uiGroup);
 
-		#if mobile
+		#if TOUCH_CONTROLS
 		add(playButton);
 		add(testButton);
 		add(deleteButton);
@@ -1435,14 +1442,16 @@ class Charter extends UIState {
 						}
 					}
 				}
+				#if TOUCH_CONTROLS
 				if (controls.LEFT_P)
-					_playback_back();
+					_playback_back(null);
 				if (controls.RIGHT_P)
-					_playback_forward();
+					_playback_forward(null);
 				if (controls.UP_P)
-					_playback_back_step();
+					_playback_back_step(null);
 				if (controls.DOWN_P)
-					_playback_forward_step();
+					_playback_forward_step(null);
+				#end
 			}
 		}
 
