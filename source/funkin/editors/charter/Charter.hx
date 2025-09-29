@@ -559,33 +559,42 @@ class Charter extends UIState {
 		}, 75, 75);
 		playButton.cameras = [uiCamera];
 		playButton.field.scale.set(1.5, 1.5);
+		playButton.alpha = Options.touchPadAlpha;
 
 		testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", () -> _chart_playtest(null), 120, 50);
 		testButton.cameras = [uiCamera];
+		testButton.alpha = Options.touchPadAlpha;
 
 		deleteButton = new UIButton(10, 150, "X", () -> _edit_delete(null), 40, 40);
 		deleteButton.cameras = [uiCamera];
 		deleteButton.field.scale.set(1.5, 1.5);
+		deleteButton.alpha = Options.touchPadAlpha;
 
 		undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", () -> _edit_undo(null), 40, 40);
 		undoButton.cameras = [uiCamera];
 		undoButton.field.scale.set(1.5, 1.5);
+		undoButton.alpha = Options.touchPadAlpha;
 
 		redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", () -> _edit_redo(null), 40, 40);
 		redoButton.cameras = [uiCamera];
 		redoButton.field.scale.set(1.5, 1.5);
+		redoButton.alpha = Options.touchPadAlpha;
 
 		sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
 		sustainTxt.cameras = [uiCamera];
+		sustainTxt.visible = controls.touchC;
 
 		upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", () -> _note_subtractsustain(null), 40, 40);
 		upSustainButton.cameras = [uiCamera];
+		upSustainButton.alpha = Options.touchPadAlpha;
 
 		downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", () -> _note_addsustain(null), 40, 40);
 		downSustainButton.cameras = [uiCamera];
+		downSustainButton.alpha = Options.touchPadAlpha;
 
 		exitButton = new UIButton(10, FlxG.height - 50, "<", () -> _file_exit(null), 40, 40);
 		exitButton.cameras = [uiCamera];
+		exitButton.alpha = Options.touchPadAlpha;
 		#end
 
 		// adds grid and notes so that they're ALWAYS behind the UI
