@@ -547,38 +547,38 @@ class Charter extends UIState {
 		globalAddEventSpr.cameras = [charterCamera];
 		globalAddEventSpr.alpha = 0;
 
-	playButton = new UIButton(FlxG.width - 105, FlxG.height - 85, ">", () -> {
-		_playback_play();
+	playButton = new UIButton(FlxG.width - 105, FlxG.height - 85, ">", (_) -> {
+		_playback_play(_);
 		playButton.field.text = FlxG.sound.music.playing ? "||" : ">";
 	}, 75, 75);
 	playButton.cameras = [uiCamera];
 	playButton.field.scale.set(1.5,1.5);
 		
-	testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", _chart_playtest, 120, 50);
+	testButton = new UIButton(FlxG.width - 150, playButton.y - 60, "Playtest", (_) -> _chart_playtest(_), 120, 50);
 	testButton.cameras = [uiCamera];
 		
-	deleteButton = new UIButton(10, 150, "X", _edit_delete, 40, 40);
+	deleteButton = new UIButton(10, 150, "X", (_) -> _edit_delete(_), 40, 40);
 	deleteButton.cameras = [uiCamera];
 	deleteButton.field.scale.set(1.5,1.5);
 		
-	undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", _edit_undo, 40, 40);
+	undoButton = new UIButton(deleteButton.x + 50, deleteButton.y, "<", (_) -> _edit_undo(_), 40, 40);
 	undoButton.cameras = [uiCamera];
 	undoButton.field.scale.set(1.5,1.5);
 		
-	redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", _edit_redo, 40, 40);
+	redoButton = new UIButton(undoButton.x + 50, undoButton.y, ">", (_) -> _edit_redo(_), 40, 40);
 	redoButton.cameras = [uiCamera];
 	redoButton.field.scale.set(1.5,1.5);
 		
 	sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
 	sustainTxt.cameras = [uiCamera];
 		
-	upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", _note_subtractsustain, 40, 40);
+	upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", (_) -> _note_subtractsustain(_), 40, 40);
 	upSustainButton.cameras = [uiCamera];
 		
-	downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", _note_addsustain, 40, 40);
+	downSustainButton = new UIButton(upSustainButton.x + 50, upSustainButton.y, "↓", (_) -> _note_addsustain(_), 40, 40);
 	downSustainButton.cameras = [uiCamera];
 	
-	exitButton = new UIButton(10, FlxG.height - 50, "<", _file_exit, 40, 40);
+	exitButton = new UIButton(10, FlxG.height - 50, "<", (_) -> _file_exit(_), 40, 40);
 	exitButton.cameras = [uiCamera];
 
 		// adds grid and notes so that they're ALWAYS behind the UI
