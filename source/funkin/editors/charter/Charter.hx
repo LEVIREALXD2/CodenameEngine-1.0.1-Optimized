@@ -582,7 +582,7 @@ class Charter extends UIState {
 
 		sustainTxt = new FlxText(10, deleteButton.y + 50, 0, "Sustain:", 20).setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, "left");
 		sustainTxt.cameras = [uiCamera];
-		sustainTxt.visible = controls.touchC;
+		sustainTxt.visible = funkin.backend.system.Controls.instance.touchC;
 
 		upSustainButton = new UIButton(sustainTxt.x, sustainTxt.y + 30, "↑", () -> _note_subtractsustain(null), 40, 40);
 		upSustainButton.cameras = [uiCamera];
