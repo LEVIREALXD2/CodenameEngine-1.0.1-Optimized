@@ -54,5 +54,3 @@ do you yield--i do not
 funk funk--revolution
 null object--reference
 hi--how are you
-
-ya pin--borra la cuenta
