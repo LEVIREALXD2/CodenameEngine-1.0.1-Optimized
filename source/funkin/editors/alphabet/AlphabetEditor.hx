@@ -282,9 +282,9 @@ class AlphabetEditor extends UIState {
 
 		add(topMenuSpr);
 		add(uiGroup);
-	    #if mobile
-			addTouchPad("LEFT_RIGHT", "NONE");
-			addTouchPadCamera();
+	    #if TOUCH_CONTROLS
+		addTouchPad("LEFT_RIGHT", "NONE");
+		addTouchPadCamera();
 		#end
 
 		if(Framerate.isLoaded) {
@@ -355,11 +355,11 @@ class AlphabetEditor extends UIState {
 		if (currentFocus == null) {
 			if(FlxG.keys.justPressed.ANY)
 				UIUtil.processShortcuts(topMenu);
-			#if mobile
-			    if (controls.LEFT_P)
-				    _tape_left(null);
-			    if (controls.RIGHT_P)
-				    _tape_right(null);
+			#if TOUCH_CONTROLS
+			if (controls.LEFT_P)
+				_tape_left(null);
+			if (controls.RIGHT_P)
+				_tape_right(null);
 		    #end
 			if(curSelectedComponent != null) {
 				if(FlxG.keys.pressed.K) {
