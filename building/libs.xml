@@ -26,7 +26,8 @@
 
 		<lib name="nape-haxe4" />
 
-		<git name="format" url="https://github.com/HomuHomu833-haxelibs/format" />
+		<lib name="format" />
+		<lib name="hxp" />
 
 		<git name="hxcpp" url="https://github.com/HomuHomu833-haxelibs/hxcpp" />
 	</if>
