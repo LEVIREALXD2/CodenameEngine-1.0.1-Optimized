@@ -34,7 +34,7 @@ jobs:
         run: |
           haxe -cp commandline -D analyzer-optimize --run Main setup -s
       - name: Building the game
-        run: haxelib run lime build ios -nosign -final
+        run: haxelib run lime build ios -eval -nosign -final
       - name: Clearing already existing cache
         uses: actions/github-script@v6
         with:
