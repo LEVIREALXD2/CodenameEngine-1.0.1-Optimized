@@ -7,46 +7,46 @@
 		<str id="game.accuracy">Akurasi:{0} - {1}</str>
 		<str id="game.combo">Kombo:{0}</str>
 
-		<str id="game.rating.[N/A]">[N/A]</str>
-		<str id="game.rating.F">F</str>
-		<str id="game.rating.E">E</str>
-		<str id="game.rating.D">D</str>
-		<str id="game.rating.C">C</str>
-		<str id="game.rating.B">B</str>
-		<str id="game.rating.A">A</str>
-		<str id="game.rating.S">S</str>
-		<str id="game.rating.S++">S++</str>
+		<str id="game.rating.[N/A]">Belum ada</str>
+		<str id="game.rating.F">Tolol</str>
+		<str id="game.rating.E">Sial</str>
+		<str id="game.rating.D">Meh</str>
+		<str id="game.rating.C">Lumayan</str>
+		<str id="game.rating.B">Bagus</str>
+		<str id="game.rating.A">Luar Biasa</str>
+		<str id="game.rating.S">GG</str>
+		<str id="game.rating.S++">GG++</str>
 	</group>
 
 	<group name="StoryMenu">
-		<str id="story.score">Skor Week:{0}</str>
-		<str id="story.tracks">TRACKS</str>
+		<str id="story.score">WEEKS SKOR:{0}</str>
+		<str id="story.tracks">LIST LAGU</str>
 	</group>
 
 	<group name="Freeplay">
-		<str id="freeplay.score">PERSONAL SKOR:{0}</str>
-		<str id="freeplay.solo">Solo</str>
-		<str id="freeplay.opponentMode">Opponent Mode</str>
-		<str id="freeplay.coopMode">Co-Op Mode</str>
-		<str id="freeplay.coopModeSwitched">Co-Op Mode (Tertukar)</str>
+		<str id="freeplay.score">TOTAL SKOR:{0}</str>
+		<str id="freeplay.solo">Sendiri</str>
+		<str id="freeplay.opponentMode">Mode Musuh</str>
+		<str id="freeplay.coopMode">Dua Duanya</str>
+		<str id="freeplay.coopModeSwitched">Dua Duanya (Tapi Tertukar)</str>
 	</group>
 
 	<group name="Pause">
 		<group name="PauseOptions">
 			<str id="pause.resume">Lanjutkan</str>
 			<str id="pause.restartSong">Memuat Ulang</str>
-			<str id="pause.changeControls">ganti kontrol</str>
-			<str id="pause.changeOptions">Ganti Setelan</str>
-			<str id="pause.exitToMenu">Keluar menuju menu</str>
+			<str id="pause.changeControls">Ganti kontrol</str>
+			<str id="pause.changeOptions">Ganti Pengaturan</str>
+			<str id="pause.exitToMenu">Keluar Menuju Menu</str>
 			<str id="pause.exitToCharter">Keluar Menuju charter</str>
 			<str id="pause.resumeCutscene">Lanjutkan Cutscene</str>
 			<str id="pause.skipCutscene">Lewati Cutscene</str>
 			<str id="pause.restartCutscene">Memuat Ulang Cutscene</str>
 		</group>
 
-		<str id="pause.deathCounter">Biji birunya: {0}</str>
-		<str id="pause.coopMode">CO-OP MODE</str>
-		<str id="pause.opponentMode">OPPONENT MODE</str>
+		<str id="pause.deathCounter">Anu Birunya: {0}</str>
+		<str id="pause.coopMode">DUA DUANYA</str>
+		<str id="pause.opponentMode"> MODE MUSUH</str>
 	</group>
 
 	<group name="Credits">
@@ -57,10 +57,10 @@
 			<str id="credits.allContributors">All the contributors of the engine! - Press RESET to update the list (One reset per 2 minutes).</str>
 		</group>
 		<group name="CreditsMain">
-			<str id="credits.name">Credits</str>
-			<str id="credits.madePossible">The people who made this possible!</str>
-			<str id="credits.selectCodename">Select this to see all the contributors of the engine!</str>
-			<str id="credits.selectBase">Select this to open the itch.io page of the original game to donate!</str>
+			<str id="credits.name">Kredits</str>
+			<str id="credits.madePossible">semua orang yang membuat ini!</str>
+			<str id="credits.selectCodename">Pilih Ini Untuk Melihat Semua Kontribusi Dari engine Ini!</str>
+			<str id="credits.selectBase">Pilih ini untuk membuka itch.io dan memberikan donasi kepada sang developer! (seikhlasnya)</str>
 		</group>
 	</group>
 
@@ -69,28 +69,28 @@
 	</group>
 
 	<group name="MainMenu">
-		<str id="mainMenu.commit">Commit: {0} ({1})</str>
-		<str id="mainMenu.openMods">[{0}] Open Mods menu</str>
+		<str id="mainMenu.commit">Kode Komit: {0} ({1})</str>
+		<str id="mainMenu.openMods">[{0}] Buka Mods Folder Menu</str>
 	</group>
 
 	<group name="Updater">
 		<group name="UpdateAvailable">
-			<str id="updateAvailable.title">NEW UPDATE</str>
+			<str id="updateAvailable.title">UPDATE TERBARU</str>
 			<str id="updateAvailable.install">INSTALL</str>
-			<str id="updateAvailable.skip">SKIP</str>
+			<str id="updateAvailable.skip">LEWATI</str>
 		</group>
 		<group name="UpdateScreen">
-			<str id="updateScreen.general-1">Preparing update installation...</str>
-			<str id="updateScreen.part-1">Creating installation folder and cleaning old update files...</str>
+			<str id="updateScreen.general-1">persiapan pembaruan instalasi...</str>
+			<str id="updateScreen.part-1">membuat instalasi folder dan menghapus folder lama...</str>
 
-			<str id="updateScreen.general-2">Downloading update assets...</str>
-			<str id="updateScreen.part-2">Downloading file {0}</str>
+			<str id="updateScreen.general-2">Mendownload update assets...</str>
+			<str id="updateScreen.part-2">Mendownload file {0}</str>
 
-			<str id="updateScreen.general-3">Downloading new engine executable...</str>
-			<str id="updateScreen.part-3">Downloading {0}</str>
+			<str id="updateScreen.general-3">Mendownload engine baru executable...</str>
+			<str id="updateScreen.part-3">Mendownload {0}</str>
 
-			<str id="updateScreen.general-4">Installing new files...</str>
-			<str id="updateScreen.part-4">Installing {0}</str>
+			<str id="updateScreen.general-4">Menginstall file baru...</str>
+			<str id="updateScreen.part-4">Menginstall {0}</str>
 		</group>
 	</group>
 
