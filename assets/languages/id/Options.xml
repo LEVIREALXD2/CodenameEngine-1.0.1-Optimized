@@ -113,7 +113,7 @@
 		<str id="touchPadAlpha-name">Transparan Buram</str>
 		<str id="touchPadAlpha-desc">Ubah ukuran transparan buram touchpad yang buram seharusnya.</str>
 
-		<str id="hitboxType-name">Desain Hitbox</str>
+		<str id="hitboxType-name">Gaya Hitbox</str>
 		<str id="hitboxType-desc">Pilih desain hitbox yang kalian suka.</str>
 
 		<str id="hitboxPos-name">Posisi Hitbox</str>
