@@ -1,239 +1,239 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language>
-	<str id="optionsMenu.desc-missing">No Description</str>
+	<str id="optionsMenu.desc-missing">Tidak ada deskripsi...</str>
 
 	<group name="OptionsMenu">
 		<str id="optionsMenu.advanced">Advanced</str>
-		<str id="optionsMenu.header.title">Options Menu</str>
-		<str id="optionsMenu.header.desc">Select a category to continue.</str>
+		<str id="optionsMenu.header.title">Menu Opsi</str>
+		<str id="optionsMenu.header.desc">Pilih kategori untuk melanjutkan.</str>
 
-		<str id="optionsTree.controls-name">Controls</str>
-		<str id="optionsTree.controls-desc">Change Controls for Player 1 and Player 2!</str>
+		<str id="optionsTree.controls-name">kontrol</str>
+		<str id="optionsTree.controls-desc">Ganti kontrol untuk Player 1 dan Player 2!</str>
 
 		<str id="optionsTree.gameplay-name">Gameplay</str>
-		<str id="optionsTree.gameplay-desc">Change Gameplay options such as Downscroll, Scroll Speed, Naughtyness...</str>
-		<str id="optionsTree.gameplay.advanced-desc">Change more advanced options such as Streaming Audio...</str>
+		<str id="optionsTree.gameplay-desc">Ganti opsi Gameplay seperti Downscroll, Scroll Kecepatan, Bahasa Toxic...</str>
+		<str id="optionsTree.gameplay.advanced-desc">Merubah lebih dari opsi seperti Streaming Audio...</str>
 
-		<str id="optionsTree.appearance-name">Appearance</str>
-		<str id="optionsTree.appearance-desc">Change Appearance options such as Flashing menus...</str>
-		<str id="optionsTree.appearance.advanced-desc">Change more advanced options such as VRAM-Only Sprites, Antialiasing, Shaders</str>
+		<str id="optionsTree.appearance-name">Kemunculan</str>
+		<str id="optionsTree.appearance-desc">Merubah kemunculannya opsi seperti Menu Kedap Kedip...</str>
+		<str id="optionsTree.appearance.advanced-desc">Ubah opsi yang lebih canggih seperti sprite khusus VRAM, analisasi, dan shaders</str>
 
-		<str id="optionsTree.language-name">Language</str>
-		<str id="optionsTree.language-desc">Change the language that the engine uses.</str>
+		<str id="optionsTree.language-name">Bahasa</str>
+		<str id="optionsTree.language-desc">Merubah bahasa seperti yang digunakan engine ini.</str>
 
-		<str id="optionsTree.miscellaneous-name">Miscellaneous</str>
-		<str id="optionsTree.miscellaneous-desc">Use this menu to reset save data or engine settings.</str>
+		<str id="optionsTree.miscellaneous-name">Bermacam-macam</str>
+		<str id="optionsTree.miscellaneous-desc">Gunakan menu ini untuk reset save data atau peraturan engine.</str>
 
-		<str id="optionsTree.debug-name">Debug Options</str>
-		<str id="optionsTree.debug-desc">Debug Options for Developer Mode.</str>
+		<str id="optionsTree.debug-name">Opsi Debug</str>
+		<str id="optionsTree.debug-desc">Opsi Debug Untuk Mode Developer.</str>
 
-		<str id="optionsTree.mobile-name">Mobile Options</str>
-		<str id="optionsTree.mobile-desc">Change Options related to Mobile or Touch Controls.</str>
+		<str id="optionsTree.mobile-name">Opsi Mobile</str>
+		<str id="optionsTree.mobile-desc">Merubah Opsi Yang Berhubungan Untuk HP Mobile Atau Kontrol Sentuh.</str>
 	</group>
 
 	<group name="KeybindOptions" prefix="KeybindsOptions.">
-		<str id="left">Left</str>
-		<str id="down">Down</str>
-		<str id="up">Up</str>
-		<str id="right">Right</str>
+		<str id="left">Kiri</str>
+		<str id="down">Bawah</str>
+		<str id="up">Atas</str>
+		<str id="right">Kanan</str>
 
-		<str id="category.notes">Notes</str>
+		<str id="category.notes">Panah</str>
 
 		<str id="category.ui">UI</str>
 		<group name="ui" prefix="ui.">
-			<str id="accept">Accept</str>
-			<str id="back">Back</str>
-			<str id="reset">Reset</str>
+			<str id="accept">Setuju</str>
+			<str id="back">Kembali</str>
+			<str id="reset">Ulang</str>
 			<str id="pause">Pause</str>
-			<str id="changeMode">Change Mode</str>
+			<str id="changeMode">Ganti Mode</str>
 		</group>
 
 		<str id="category.engine">Engine</str>
 		<group name="engine" prefix="engine.">
-			<str id="switchMod">Switch Mod</str>
+			<str id="switchMod">Tukar Mod</str>
 		</group>
 
 		<str id="category.volume">Volume</str>
-		<str id="volume.up">Up</str>
-		<str id="volume.down">Down</str>
-		<str id="volume.mute">Mute</str>
+		<str id="volume.up">Naik</str>
+		<str id="volume.down">Turun</str>
+		<str id="volume.mute">Bisu</str>
 
 		<str id="category.developer">Developer</str>
 		<group name="developer" prefix="developer.">
-			<str id="devMenus">Developer Menus</str>
-			<str id="openConsole">Open Console</str>
+			<str id="devMenus">Developer Menu</str>
+			<str id="openConsole">Buka Konsole</str>
 			<str id="reloadState">Reload State</str>
 		</group>
 	</group>
 
 	<group name="AppearanceOptions" prefix="AppearanceOptions.">
 		<str id="framerate-name">Framerate</str>
-		<str id="framerate-desc">Pretty self explanatory, isn't it?</str>
+		<str id="framerate-desc">FPS itu kecepatan di game nya (tergantung dari perangkat nya, sekuat berapakah FPS di perangkat mu?, cukup jelas bukan?)</str>
 
-		<str id="flashingMenu-name">Flashing Menu</str>
-		<str id="flashingMenu-desc">If unchecked, will disable menu flashing when you select an option in the Main Menu, and other flashes will be slower.</str>
+		<str id="flashingMenu-name">Menu Kedap Kedip</str>
+		<str id="flashingMenu-desc">Jika dinonaktifkan, akan mematikan menu kedap kedip disaat kau memilih opsi ini di Main Menu, kedap kedip lainnya akan melambat.</str>
 
-		<str id="colorHealthBar-name">Colored Healthbar</str>
-		<str id="colorHealthBar-desc">If unchecked, the game will use the original red/green health bar from the week 6 fnf game.</str>
+		<str id="colorHealthBar-name">Healthbar berwarna</str>
+		<str id="colorHealthBar-desc"> jika dinonaktifkan, Healthbarnya akan menggunakan Merah/Hijau yang berasal dari week 6 fnf.</str>
 
-		<str id="week6PixelPerfect-name">Pixel Perfect Effect</str>
-		<str id="week6PixelPerfect-desc">If checked, Week 6 or other pixel stages will have a pixel perfect effect to it enabled, aligning every pixel on the screen.</str>
+		<str id="week6PixelPerfect-name">Efek Piksel</str>
+		<str id="week6PixelPerfect-desc">Jika diaktifkan, Week 6 atau piksel stages lainnya akan memiliki efek piksel,untuk mengaktifkan nya, Menyelaraskan setiap piksel di layar.</str>
 
 		<group name="AppearanceOptionsAdvanced" prefix="Advanced.">
-			<str id="quality-name">Quality</str>
-			<str id="quality-desc">Quality modes to choose, "LOW" = Disable every heavy visual effects as it can get to smoothen the gameplay, "HIGH" = Enable all of the visual effects, with the cost of performance, "CUSTOM" = Allow of custom options that is available in Advanced.</str>
-			<str id="quality-low">LOW</str>
-			<str id="quality-high">HIGH</str>
-			<str id="quality-custom">CUSTOM</str>
+			<str id="quality-name">Kualitas</str>
+			<str id="quality-desc">Pilih mode kualitas kalian, "Kecil" = Nonaktifkan setiap efek visual yang berat karena dapat memperlancar gameplay, "Tinggi" = Mengaktifkan semua efek visual, dengan biaya kinerja, "Kostum" = Izinkan opsi khusus yang tersedia di Advanced.</str>
+			<str id="quality-low">KECIL</str>
+			<str id="quality-high">TINGGI</str>
+			<str id="quality-custom">KOSTUM</str>
 
-			<str id="antialiasing-name">Antialiasing</str>
-			<str id="antialiasing-desc">If unchecked, will disable antialiasing on every sprite. Can boost performances at the cost of sharper, more pixely sprites.</str>
+			<str id="antialiasing-name">Analisasi</str>
+			<str id="antialiasing-desc">Jika dinonaktifkan, akan menonaktifkan analisasi pada setiap sprite. Dapat meningkatkan kinerja dengan harga sprite yang lebih tajam dan lebih piksel..</str>
 
-			<str id="lowMemoryMode-name">Low Memory Mode</str>
-			<str id="lowMemoryMode-desc">If checked, will disable certain background elements in stages to reduce memory usage.</str>
+			<str id="lowMemoryMode-name"> Mode Memori kecil</str>
+			<str id="lowMemoryMode-desc">jika diaktifkan, Akan menonaktifkan elemen latar belakang tertentu secara bertahap untuk mengurangi penggunaan memori.</str>
 
 			<str id="gameplayShaders-name">Gameplay Shaders</str>
-			<str id="gameplayShaders-desc">If unchecked, gameplay shaders (visual effects like Thorns's Chromatic Aberration) wont be loaded; this may be helpful on weak devices.</str>
+			<str id="gameplayShaders-desc">jika dinonaktifkan, gameplay shaders (efek visual seperti Thorns's Chromatic Aberration) tidak akan muncul; ini akan membantu untuk perangkat lama.</str>
 
 			<str id="gpuOnlyBitmaps-name">VRAM-Only Sprites</str>
-			<str id="gpuOnlyBitmaps-desc">If checked, will only store the bitmaps in the GPU, freeing a LOT of memory (EXPERIMENTAL). Turning this off will consume a lot of memory, especially on bigger sprites. If you aren't sure, leave this on.</str>
+			<str id="gpuOnlyBitmaps-desc">jika diaktifkan, Hanya akan menyimpan bitmap di GPU, membebaskan banyak memori (eksperimental). Mematikan ini akan menghabiskan banyak memori, terutama pada sprite yang lebih besar. Jika kalian tidak yakin, biarkan saja.</str>
 		</group>
 	</group>
 
 	<group name="MobileOptions" prefix="MobileOptions.">
-		<str id="extraHints-name">Extra Hints</str>
-		<str id="extraHints-desc">Select how many extra hints you prefer to have on hitbox.</str>
+		<str id="extraHints-name">Ekstra Tombol</str>
+		<str id="extraHints-desc">Pilih berapa banyak tombol tambahan yang kalian inginkan di Hitbox.</str>
 
-		<str id="hitboxAlpha-name">Hitbox Opacity</str>
-		<str id="hitboxAlpha-desc">Change how opaque the Hitbox should be</str>
+		<str id="hitboxAlpha-name">Hitbox Transparan Buram</str>
+		<str id="hitboxAlpha-desc">Ubah ukuran transparan buram hitbox yang seharusnya.</str>
 
-		<str id="oldPadTexture-name">Use Old Pad Texture</str>
-		<str id="oldPadTexture-desc">If checked, the TouchPad will use the old texture it used before</str>
+		<str id="oldPadTexture-name">tekstur pad lama</str>
+		<str id="oldPadTexture-desc">Jika diaktifkan, touchpad akan menggunakan tekstur lama yang digunakan sebelumnya</str>
 
-		<str id="touchPadAlpha-name">TouchPad Opacity</str>
-		<str id="touchPadAlpha-desc">Change how opaque the TouchPad should be</str>
+		<str id="touchPadAlpha-name">TouchPad Transparan Buram</str>
+		<str id="touchPadAlpha-desc">Ubah ukuran transparan buram touchpad yang buram seharusnya.</str>
 
-		<str id="hitboxType-name">Hitbox Design</str>
-		<str id="hitboxType-desc">Choose how your Hitbox should look like!</str>
+		<str id="hitboxType-name">Desain Hitbox</str>
+		<str id="hitboxType-desc">Pilih desain hitbox yang kalian suka.</str>
 
-		<str id="hitboxPos-name">Hitbox Position</str>
-		<str id="hitboxPos-desc">If checked, the Hitbox will be put at the bottom of the screen, otherwise will stay at the top.</str>
+		<str id="hitboxPos-name">Posisi Hitbox</str>
+		<str id="hitboxPos-desc">Jika diaktifkan, hitbox akan diletakkan di bagian bawah layar, jika tidak akan tetap di atas.</str>
 
-		<str id="screenTimeOut-name">Allow Screen Timeout</str>
-		<str id="screenTimeOut-desc">If checked, The phone will enter sleep mode if the player is inactive.</str>
+		<str id="screenTimeOut-name">Izinkan Waktu Habis</str>
+		<str id="screenTimeOut-desc">jika diaktifkan, perangkat kalian akan mati ketika player dalam mode AFK.</str>
 
-		<str id="useExternal-name">Use EXTERNAL Folder</str>
-		<str id="useExternal-desc">If checked, The engine will use .CodenameEngine for the Mods and Addons folder.</str>
+		<str id="useExternal-name">Gunakan Folder EXTERNAL</str>
+		<str id="useExternal-desc">Jika diaktifkan, enginenya akan menggunakan .CodenameEngine untuk mods folder dan addons. (mod kalian jadinya dipindahkan di external)</str>
 
-		<str id="storageTypeChange-title">Warning: Storage Type Has Been Changed!</str>
-		<str id="storageTypeChange-body">The Storage Type has been changed.\nA restart is required for this change to take effect.\nAny previously installed mods will have to be moved manually to the new Storage Types's directory after this restart.\n\nPress OK to reset the game and apply the changes.</str>
+		<str id="storageTypeChange-title">Peringatan: Tipe Penyimpanan telah dirubah!</str>
+		<str id="storageTypeChange-body">Tipe penyimpanan telah dirubah.\nA memuat ulang sangat diperlukan agar perubahan ini berlaku.\nSetiap mod yang diinstal sebelumnya harus dipindahkan secara manual ke direktori tipe penyimpanan baru setelah memuat ulang ini berlangsung.\n\nTekan OK untuk mengulang game nya dan menyetujui perubahannya.</str>
 	</group>
 
 	<group name="GameplayOptions" prefix="GameplayOptions.">
 		<str id="downscroll-name">Downscroll</str>
-		<str id="downscroll-desc">If checked, notes will go from up to down instead of down to up, as if they're falling.</str>
+		<str id="downscroll-desc">jika diaktifkan, Panah yang tadinya diatas dirubah menjadi kebawah, melainkan notenya muncul dari atas.</str>
 
-		<str id="ghostTapping-name">Ghost Tapping</str>
-		<str id="ghostTapping-desc">If unchecked, trying to hit any strum that have no note that can be hit will cause a miss.</str>
+		<str id="ghostTapping-name">Sentuh Hantu</str>
+		<str id="ghostTapping-desc">jika diaktifkan, tombol yang kalian sentuh saat memainkan game nya,tidak akan meleset (sangat berguna untuk mod yang Panah nya kebanyakan).</str>
 
-		<str id="naughtyness-name">Naughtyness</str>
-		<str id="naughtyness-desc">If unchecked, will censor the Week 7 cutscenes or more.</str>
+		<str id="naughtyness-name">bahasa toxic</str>
+		<str id="naughtyness-desc">jika dinonaktifkan, di week 7 atau lainnya akan disensor.</str>
 
-		<str id="camZoomOnBeat-name">Camera Zoom on Beat</str>
-		<str id="camZoomOnBeat-desc">If unchecked, will stop the camera from zooming in every 4 beats.</str>
+		<str id="camZoomOnBeat-name">kamera Zoom setiap Beat</str>
+		<str id="camZoomOnBeat-desc">jika dinonaktifkan, akan berhenti maju saat 4 beats.</str>
 
-		<str id="autoPause-name">Auto Pause</str>
-		<str id="autoPause-desc">If checked, switching windows will pause the game.</str>
+		<str id="autoPause-name">Pause otomatis</str>
+		<str id="autoPause-desc">jika diaktifkan, memindahkan jendela lain akan menjeda game nya.</str>
 
-		<str id="volumeMusic-name">Music Volume</str>
-		<str id="volumeMusic-desc">Changes only the volume of the music instead of everything.</str>
+		<str id="volumeMusic-name">Musik Volume</str>
+		<str id="volumeMusic-desc">merubah volume musik melainkan apapun.</str>
 
 		<str id="volumeSFX-name">SFX Volume</str>
-		<str id="volumeSFX-desc">Changes only the volume of the SFX instead of everything.</str>
+		<str id="volumeSFX-desc">merubah hanya SFX saja melainkan apapun.</str>
 
-		<str id="songOffset-name">Song Offset</str>
-		<str id="songOffset-desc">Changes the offset that songs should start with.</str>
+		<str id="songOffset-name">Offset Lagu</str>
+		<str id="songOffset-desc">merubah offset lagu should ketika memulai.</str>
 
 		<group name="GameplayOptionsAdvanced" prefix="Advanced.">
-			<str id="windowSize-name">Window Size</str>
+			<str id="windowSize-name">Ukuran Jendela</str>
 			<str id="windowSize-desc">...</str>
 
-			<str id="streamedMusic-name">Streamed Music</str>
-			<str id="streamedMusic-desc">If checked, only musics will have streamed audio, ALSO freeing a LOT of memory with the downside of higher cpu usage if more audio are being streamed at once (EXPERIMENTAL). Turning this off will consume a lot of memory, especially on longer songs. If you aren't sure, leave this on.</str>
+			<str id="streamedMusic-name">Streamed Musik</str>
+			<str id="streamedMusic-desc">jika diaktifkan, Hanya musik yang akan mengalirkan audio, juga membebaskan banyak memori dengan sisi negatif penggunaan CPU yang lebih tinggi jika lebih banyak audio yang dialirkan sekaligus (eksperimental). Menonaktifkannya akan menghabiskan banyak memori, terutama pada lagu yang lebih panjang. jika tidak yakin, biarkan saja ini aktif.</str>
 
-			<str id="streamedVocals-name">Streamed Vocals</str>
-			<str id="streamedVocals-desc">If checked, vocals will also be streamed if Streamed Music is checked, will impact the performance if the song uses alot of vocals (EXPERIMENTAL). If you aren't sure, leave this off.</str>
+			<str id="streamedVocals-name">Streamed Vokal</str>
+			<str id="streamedVocals-desc">jika diaktifkan, vokal juga akan dialirkan jika Musik Streaming dicentang, akan memengaruhi pertunjukan jika lagu menggunakan banyak vokal (EKSPERIMENTAL). jika tidak yakin, biarkan ini tidak aktif.</str>
 		</group>
 	</group>
 
 	<group name="LanguageOptions" prefix="LanguageOptions.">
-		<str id="language-name">Language</str>
-		<str id="language-desc">Language by {0} (Version: {1})</str>
+		<str id="language-name">Bahasa</str>
+		<str id="language-desc">Terjemahan Oleh {0} (Version: {1})</str>
 	</group>
 
 	<group name="MiscOptions" prefix="MiscOptions.">
-		<str id="forceCrash-name">Force Crash</str>
-		<str id="forceCrash-desc">Select this option to force a crash.</str>
+		<str id="forceCrash-name">Memaksakan kerusakan</str>
+		<str id="forceCrash-desc">Pilih opsi ini untuk memaksakan kerusakan.</str>
 
-		<str id="betaUpdates-name">Nightly Updates</str>
-		<str id="betaUpdates-desc">If checked, will also include nightly builds (the engine repository's commit updates basically, using Actions' builds) in the update checking.</str>
+		<str id="betaUpdates-name">Info Updates</str>
+		<str id="betaUpdates-desc">Jika diaktifkan, akan muncul info update terbaru (biasanya engine nya akan ngasih info kalau ada komit update terbaru, menggunakan 'Actions' builds) baca selengkapnya.</str>
 
-		<str id="checkForUpdates-name">Check for Updates</str>
-		<str id="checkForUpdates-desc">Select this option to check for new engine updates.</str>
-		<str id="checkForUpdates-noUpdateFound">No update found.</str>
+		<str id="checkForUpdates-name">Memerika untuk Updates</str>
+		<str id="checkForUpdates-desc">Pilih opsi ini untuk memeriksa engine versi terbaru.</str>
+		<str id="checkForUpdates-noUpdateFound">tidak ada update ditemukan.</str>
 
-		<str id="devMode-name">Developer Mode</str>
-		<str id="devMode-desc">If checked, you will be able to access developer features like certain keybinds, editors, developer options, state reloads, console and more.</str>
+		<str id="devMode-name">Mode Pengembang</str>
+		<str id="devMode-desc">Jika diaktifkan, kalian akan dapat mengakses fitur pengembang seperti pintasan keyboard tertentu, editor, opsi pengembang, pemuatan ulang status, konsol, dan banyak lagi.</str>
 
-		<str id="allowConfigWarning-name">Show Modpacks Warning</str>
-		<str id="allowConfigWarning-desc">If checked, a popup at the start of the game will appear if there are some warnings about the modpack, such as missing configs, incompatible versions and more</str>
+		<str id="allowConfigWarning-name">Menampilkan Peringatan Modpack</str>
+		<str id="allowConfigWarning-desc">Jika diaktifkan, sebuah pop up di awal permainan akan muncul jika ada beberapa peringatan tentang modpack, seperti konfigurasi yang hilang, versi yang tidak kompatibel, dan lainnya</str>
 
-		<str id="resetSaveData-name">Reset Save Data</str>
-		<str id="resetSaveData-desc">Select this option to reset save data. This will remove all of your highscores.</str>
+		<str id="resetSaveData-name">Mengulang Save Data</str>
+		<str id="resetSaveData-desc">Pilih opsi ini untuk mengatur ulang data penyimpanan. Ini akan menghapus semua skor tertinggi Anda..</str>
 	</group>
 
 	<group name="DebugOptions" prefix="DebugOptions.">
-		<str id="title">Debug Options</str>
-		<str id="desc">Use this menu to enable or disable debug options.</str>
+		<str id="title">Opsi Debug</str>
+		<str id="desc">Gunakan menu ini untuk mengaktifkan atau menonaktifkan opsi debug.</str>
 
-		<str id="showConsole-name">Show Console</str>
-		<str id="showConsole-desc">Select this to show the debug console, which contains log information about the game.</str>
+		<str id="showConsole-name">Menunjukan Konsol</str>
+		<str id="showConsole-desc">Pilih ini untuk menampilkan konsol debug, yang berisi informasi log tentang game.</str>
 
-		<str id="editorsResizable-name">Resizable Editors</str>
-		<str id="editorsResizable-desc">If checked, this will allow the editors to render beyond the base 1280x720 resolution of FNF (allowing for more detail and space...)</str>
+		<str id="editorsResizable-name">Ukuran Editors</str>
+		<str id="editorsResizable-desc">Jika diaktifkan, ini akan memungkinkan editor untuk menampilkan di luar resolusi dasar FNF 1280x720 (memberikan lebih banyak detail dan ruang...)</str>
 
-		<str id="bypassEditorsResize-name">Bypass Editor Resize</str>
-		<str id="bypassEditorsResize-desc">Disables the minimum resolution for resizing editors (Needs Resizable Editors To Be Enabled).</str>
+		<str id="bypassEditorsResize-name">Jalan Pintas Ukuran Editor</str>
+		<str id="bypassEditorsResize-desc">Menonaktifkan resolusi minimum untuk mengubah ukuran editor (Membutuhkan Editor yang Dapat Diubah Ukurannya untuk Diaktifkan).</str>
 
 		<str id="editorSFX-name">Editor SFXs</str>
-		<str id="editorSFX-desc">If checked, will play sound effects when working on editors (ex: will play sfxs when checking checkboxes...)</str>
+		<str id="editorSFX-desc">Jika diaktifkan, akan memutar efek suara saat bekerja pada editor (contoh: akan memutar efek suara saat mencentang kotak centang...)</str>
 
-		<str id="editorCharterPrettyPrint-name">Chart Pretty Print</str>
-		<str id="editorCharterPrettyPrint-desc">If checked, the saved files from the chart editor will be formatted to be easily viewable</str>
+		<str id="editorCharterPrettyPrint-name">Chart Cetakan Bagus</str>
+		<str id="editorCharterPrettyPrint-desc">Jika diaktifkan, file yang disimpan dari chart editor akan diformat agar mudah dilihat.</str>
 
-		<str id="editorCharacterPrettyPrint-name">Character Pretty Print</str>
-		<str id="editorCharacterPrettyPrint-desc">If checked, the saved files from the character editor will be formatted to be easily viewable</str>
+		<str id="editorCharacterPrettyPrint-name">Character Cetakan bagus</str>
+		<str id="editorCharacterPrettyPrint-desc">Jika diaktifkan, file yang disimpan dari editor karakter akan diformat agar mudah dilihat.</str>
 
-		<str id="editorStagePrettyPrint-name">Stage Pretty Print</str>
-		<str id="editorStagePrettyPrint-desc">If checked, the saved files from the stage editor will be formatted to be easily viewable</str>
+		<str id="editorStagePrettyPrint-name">Stage Cetakan Bagus</str>
+		<str id="editorStagePrettyPrint-desc">Jika diaktifkan, file yang disimpan dari stage editor akan diformat agar mudah dilihat.</str>
 
-		<str id="intensiveBlur-name">Intensive Blur</str>
-		<str id="intensiveBlur-desc">If checked, will use more intensive blur that may be laggier but look better.</str>
+		<str id="intensiveBlur-name">Intensif Blur</str>
+		<str id="intensiveBlur-desc">Jika diaktifkan, akan menggunakan blur yang lebih intensif yang mungkin lebih lambat tetapi terlihat lebih baik.</str>
 
 		<str id="charterAutoSaves-name">Editor Autosaves</str>
-		<str id="charterAutoSaves-desc">If checked, this will autosave your files in the editor, with the settings listed below.</str>
+		<str id="charterAutoSaves-desc">Jika diaktifkan, ini akan menyimpan otomatis file Anda di editor, dengan pengaturan yang tercantum di bawah ini.</str>
 
-		<str id="charterAutoSaveTime-name">Autosaving Time</str>
-		<str id="charterAutoSaveTime-desc">This controls how often the editor will autosave your file (in seconds...)</str>
+		<str id="charterAutoSaveTime-name">Otomatis Penyimpanan Waktu</str>
+		<str id="charterAutoSaveTime-desc">Ini mengontrol seberapa sering editor akan menyimpan otomatis berkas Anda (dalam hitungan detik...)</str>
 
-		<str id="charterAutoSaveWarningTime-name">Save Warning Time</str>
-		<str id="charterAutoSaveWarningTime-desc">This controls how long the editor will warn you before it autosaves (in seconds..., 0 to disable)</str>
+		<str id="charterAutoSaveWarningTime-name">Menyimpan Peringatan Waktu</str>
+		<str id="charterAutoSaveWarningTime-desc">Ini mengontrol berapa lama editor akan memperingatkan Anda sebelum menyimpan otomatis (dalam detik..., 0 untuk menonaktifkan)</str>
 
-		<str id="charterAutoSavesSeparateFolder-name">Autosaves Folder</str>
-		<str id="charterAutoSavesSeparateFolder-desc">If checked, this will autosave your file in a separate folder with a time stamp instead of overriding your current file. (song/autosaves/)</str>
+		<str id="charterAutoSavesSeparateFolder-name">Penyimpanan Otomatis Folder</str>
+		<str id="charterAutoSavesSeparateFolder-desc">Jika diaktifkan, ini akan menyimpan otomatis berkas Anda di folder terpisah dengan cap waktu, dan tidak akan menimpa berkas Anda saat ini. (Contoh: songs/autosaves/)</str>
 
-		<str id="songOffsetAffectEditors-name">Offset in Charter</str>
-		<str id="songOffsetAffectEditors-desc">If checked, this will enable the Song Offset option in the Chart Editor too.</str>
+		<str id="songOffsetAffectEditors-name">Offset di Charter</str>
+		<str id="songOffsetAffectEditors-desc">Jika diaktifkan, ini juga akan mengaktifkan opsi Song Offset di Chart Editor.</str>
 	</group>
 
 </language>
