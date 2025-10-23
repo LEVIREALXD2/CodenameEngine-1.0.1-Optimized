@@ -123,10 +123,10 @@
 		<str id="screenTimeOut-desc">jika diaktifkan, perangkat kalian akan mati ketika player dalam mode AFK.</str>
 
 		<str id="useExternal-name">Gunakan Folder EXTERNAL</str>
-		<str id="useExternal-desc">Jika diaktifkan, enginenya akan menggunakan .CodenameEngine untuk mods folder dan addons. (mod kalian jadinya dipindahkan di external)</str>
+		<str id="useExternal-desc">Jika diaktifkan, enginenya akan menggunakan .CodenameEngine untuk mods folder dan addons. (jadinya akan muncul di External)</str>
 
-		<str id="storageTypeChange-title">Peringatan: Tipe Penyimpanan telah dirubah!</str>
-		<str id="storageTypeChange-body">Tipe penyimpanan telah dirubah.\nA memuat ulang sangat diperlukan agar perubahan ini berlaku.\nSetiap mod yang diinstal sebelumnya harus dipindahkan secara manual ke direktori tipe penyimpanan baru setelah memuat ulang ini berlangsung.\n\nTekan OK untuk mengulang game nya dan menyetujui perubahannya.</str>
+		<str id="storageTypeChange-title">Peringatan: Penyimpanan telah dirubah ke external!</str>
+		<str id="storageTypeChange-body">(Harap Dibaca Sebelum Keluar).\n\nTipe penyimpanan telah dirubah.\nMemuat ulang sangat diperlukan agar perubahan ini berlaku.\nSetiap mod yang diinstal sebelumnya harus dipindahkan secara manual ke direktori tipe penyimpanan baru yaitu external setelah memuat ulang ini berlangsung.\n\nDan Pastikan untuk menyalakan tampilan file tersembunyi nya di zarchiver kalian\n\n selamat bermain semuanya,saya harap tidak ada bug dalam terjemahan ini\n\nsaya LG64 selaku terjemahan bahasa indonesia dari game ini.\ntekan ok untuk keluar dari game dan menyetujui ini. </str>
 	</group>
 
 	<group name="GameplayOptions" prefix="GameplayOptions.">
