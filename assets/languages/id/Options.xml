@@ -95,7 +95,7 @@
 			<str id="gameplayShaders-name">Gameplay Shaders</str>
 			<str id="gameplayShaders-desc">jika dinonaktifkan, gameplay shaders (efek visual seperti Thorns's Chromatic Aberration) tidak akan muncul; ini akan membantu untuk perangkat lama.</str>
 
-			<str id="gpuOnlyBitmaps-name">VRAM-Only Sprites</str>
+			<str id="gpuOnlyBitmaps-name">VRAM Sprites</str>
 			<str id="gpuOnlyBitmaps-desc">jika diaktifkan, Hanya akan menyimpan bitmap di GPU, membebaskan banyak memori (eksperimental). Mematikan ini akan menghabiskan banyak memori, terutama pada sprite yang lebih besar. Jika kalian tidak yakin, biarkan saja.</str>
 		</group>
 	</group>
@@ -104,13 +104,13 @@
 		<str id="extraHints-name">Ekstra Tombol</str>
 		<str id="extraHints-desc">Pilih berapa banyak tombol tambahan yang kalian inginkan di Hitbox.</str>
 
-		<str id="hitboxAlpha-name">Hitbox Transparan Buram</str>
+		<str id="hitboxAlpha-name"> Transparan Buram</str>
 		<str id="hitboxAlpha-desc">Ubah ukuran transparan buram hitbox yang seharusnya.</str>
 
 		<str id="oldPadTexture-name">tekstur pad lama</str>
 		<str id="oldPadTexture-desc">Jika diaktifkan, touchpad akan menggunakan tekstur lama yang digunakan sebelumnya</str>
 
-		<str id="touchPadAlpha-name">TouchPad Transparan Buram</str>
+		<str id="touchPadAlpha-name">Transparan Buram</str>
 		<str id="touchPadAlpha-desc">Ubah ukuran transparan buram touchpad yang buram seharusnya.</str>
 
 		<str id="hitboxType-name">Desain Hitbox</str>
@@ -139,7 +139,7 @@
 		<str id="naughtyness-name">bahasa toxic</str>
 		<str id="naughtyness-desc">jika dinonaktifkan, di week 7 atau lainnya akan disensor.</str>
 
-		<str id="camZoomOnBeat-name">kamera Zoom setiap Beat</str>
+		<str id="camZoomOnBeat-name">kamera setiap Beat</str>
 		<str id="camZoomOnBeat-desc">jika dinonaktifkan, akan berhenti maju saat 4 beats.</str>
 
 		<str id="autoPause-name">Pause otomatis</str>
