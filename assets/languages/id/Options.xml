@@ -185,7 +185,7 @@
 		<str id="devMode-name">Mode Pengembang</str>
 		<str id="devMode-desc">Jika diaktifkan, kalian akan dapat mengakses fitur pengembang seperti pintasan keyboard tertentu, editor, opsi pengembang, pemuatan ulang status, konsol, dan banyak lagi.</str>
 
-		<str id="allowConfigWarning-name">Menampilkan Peringatan Modpack</str>
+		<str id="allowConfigWarning-name">Peringatan Modpack</str>
 		<str id="allowConfigWarning-desc">Jika diaktifkan, sebuah pop up di awal permainan akan muncul jika ada beberapa peringatan tentang modpack, seperti konfigurasi yang hilang, versi yang tidak kompatibel, dan lainnya</str>
 
 		<str id="resetSaveData-name">Mengulang Save Data</str>
