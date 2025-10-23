@@ -7,14 +7,14 @@
 		<str id="game.accuracy">Akurasi:{0} - {1}</str>
 		<str id="game.combo">Kombo:{0}</str>
 
-		<str id="game.rating.[N/A]">Belum ada</str>
-		<str id="game.rating.F">Tolol</str>
-		<str id="game.rating.E">Sial</str>
-		<str id="game.rating.D">Meh</str>
-		<str id="game.rating.C">Lumayan</str>
-		<str id="game.rating.B">Bagus</str>
-		<str id="game.rating.A">Luar Biasa</str>
-		<str id="game.rating.S">GG</str>
+		<str id="game.rating.[N/A]">[N/A]</str>
+		<str id="game.rating.F">F</str>
+		<str id="game.rating.E">E</str>
+		<str id="game.rating.D">D</str>
+		<str id="game.rating.C">C</str>
+		<str id="game.rating.B">B</str>
+		<str id="game.rating.A">A</str>
+		<str id="game.rating.S">S</str>
 		<str id="game.rating.S++">GG++</str>
 	</group>
 
