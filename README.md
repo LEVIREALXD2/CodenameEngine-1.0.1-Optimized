@@ -1,4 +1,4 @@
-# Friday Night Funkin' - Codename Engine Mobile
+# Friday Night Funkin' - Codename Engine Mobile [Optimized Version]
 
 > [!CAUTION]
 > If you encounter any issues in the MOBILE PORT, PLEASE REPORT THEM TO US FIRST!  
